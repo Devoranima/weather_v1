@@ -1,0 +1,23 @@
+.forecast_item{
+    width: 150px;
+    height: 200px;
+
+    border-radius: 10px;
+    background-color: #B88080;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.forecast_image{
+    width: 70px;
+    height: 70px;
+}
+
+.forecast_day{
+    margin-bottom: 10px;
+}

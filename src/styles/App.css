@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body{
+    color: #fff;
+    font-family: 'Montserrat';
+    line-height: 1.1;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.App{
+    width: 100%;
+    height: 100vh;
+    background-color: #00AAF3;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.App::before{
+    content: "WEATHER";
+    line-height: 1;
+    font-size: 400px;
+    color: rgba(255, 255, 255, .7);
+    font-family: 'Montserrat';
+
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -50px;
+    z-index: -1;
+}
+
+.App::after{
+    content: "FOR YOU";
+
+    white-space: nowrap;
+    overflow: hidden;
+
+    line-height: 1;
+    font-size: 400px;
+    color: rgba(255, 255, 255, .7);
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -50px;
+    z-index: -1;
+}
+
+.current-weather{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    width: 600px;
+
+    padding: 20px;
+
+    background: linear-gradient(112.28deg, #2487BF 0%, #BCDFFF 100%);
+    border-radius: 10px;
+}
+
+
+.reload{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    font-size: 26px;
+
+    font-weight: 200;
+
+    margin-bottom: 40px;
+
+    align-items: center;
+}
+
+.reload-btn{
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    background-color: transparent;
+    background: url('../img/refresh-svgrepo-com.svg') no-repeat;
+    background-size: cover;
+
+    transition: scale .2s linear;
+}
+
+.reload-btn:hover{
+    scale: 1.1;
+}
+
+.location{
+    font-size: 30px;
+
+    margin-bottom: 40px;
+}
+
+.day{
+    font-size: 38px;
+}
+
+.current-state_of_weather{
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-description{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.current-num{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.current-image{
+    width: 150px;
+    height: 150px;
+}
+
+.forecast{
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    justify-content: space-between;
+    margin-top: -50px;
+}
