@@ -6,7 +6,7 @@ const ForecastDay = ({day, image, temperature, callback, isCurrent}) => {
         <div className={ isCurrent? (classes.forecast_item + " " + classes.active) : classes.forecast_item} onClick={callback}>
             <div className={classes.forecast_day}>{day}</div>
             <img className={classes.forecast_image} src={image} alt=""/>
-            <div className="temperature">{(temperature> 0 && "+") + (temperature + " °C")}</div>
+            <div className={classes.temperature}>{(temperature> 0 && "+") + (temperature + " °C")}</div>
         </div>
     );
 };

@@ -103,7 +103,7 @@ const Weather = ({fetchweather, ...weatherData}) => {
                     <div className='current-description'>
                         <div className='day'>{(currentDay === 0 ? "Today, " : "" )+ days[new Date(weatherData.forecast.forecastday[currentDay].date).getUTCDay()]}</div>
                         <div className='current-num'> {(currentState.temperature > 0 ? "+" : "") + (currentState.temperature + " °C")} </div>
-                        <div>{currentState.condition}</div>
+                        <div className='current-text'>{currentState.condition}</div>
                     </div>
                     <div className='current-right'>
                         <div className='location'>Current location:<br/> <span>{weatherData.location.name}, {weatherData.location.country}</span></div>

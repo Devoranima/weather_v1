@@ -38,3 +38,58 @@
     background-color: #BF9C1B;
     pointer-events: none;
 }
+
+
+@media (min-width: 576px) {
+    .forecast_item{
+        border-radius: 10px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .forecast_item{
+        border-radius: 0px;
+    }
+
+    .active{
+        border-radius: 10px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .forecast_item{
+
+        font-size: 20px;
+
+        width:30%;
+        height:auto;
+
+        border-radius: 0;
+        
+        margin-top: 0px;
+        padding: 40px 0 10px;
+    }
+
+    .forecast_image{
+        display: none;
+    }
+
+    .temperature{
+        display: none;
+    }
+
+}
