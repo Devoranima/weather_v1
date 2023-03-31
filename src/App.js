@@ -6,6 +6,9 @@ import { useWeather } from "./hooks/useWeather";
 
 import {Loader, Dimmer, Segment} from "semantic-ui-react"
 
+
+
+
 function App() {
   const [weatherData, setWeatherData] = useState({});
 
@@ -28,6 +31,8 @@ function App() {
     const response = await WeatherServices.getAll(city);
     setWeatherData(response.data);
   })
+
+
   
   return (
       <div className='App'>
@@ -35,13 +40,17 @@ function App() {
               <h1>An error occured: {weatherError.toString()}</h1>
           }
 
-          {isWeatherLoading?
+          {(isWeatherLoading || weatherData.current === undefined)?
           <Loader active inverted size="massive"/>
           :
           <Weather fetchweather={fetchWeather} {...weatherData}></Weather>
           }
-          
-          
+
+          <div className="background-text">
+            <div className="background-line">WEATHERWEATHERWEATHERWEATHER</div>
+            <div className="background-line">WEATHERWEATHERWEATHERWEATHER</div>
+            <div className="background-line">WEATHERWEATHERWEATHERWEATHER</div>
+          </div>
       </div>
   )
 }

@@ -14,7 +14,7 @@ export default class WeatherServices{
             params:{
                 key: API_KEY,
                 q: city,
-                days: 4,
+                days: 3,
                 aqi: 'no',
                 alerts: 'no'
             }
