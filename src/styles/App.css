@@ -55,7 +55,7 @@ body::-webkit-scrollbar {
 }
 
 .background-line{
-    animation: text-left 18s linear infinite;
+    animation: text-left 10s linear infinite;
 }
 
 .background-line:nth-child(2){
@@ -63,15 +63,15 @@ body::-webkit-scrollbar {
 }
 
 .background-line:nth-child(3){
-    animation: text-left 14s     linear infinite;
+    animation: text-left 14s linear infinite;
 }
 
 @keyframes text-left {
     0% {
-        transform: translate(0, 0);
+        transform: translate(0, 0); 
     }
     100% {
-    transform: translate(-25%, 0);
+        transform: translate(-25%, 0);
     }
 }
 
@@ -80,7 +80,7 @@ body::-webkit-scrollbar {
         transform: translate(0, 0);
     }
     100% {
-    transform: translate(25%, 0);
+        transform: translate(25%, 0);
     }
 }
 
@@ -186,3 +186,29 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     margin-top: -50px;
 }
+
+@media (min-width: 576px) {
+    /*.weather{
+        width: 100%;
+    }*/
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+ }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+ }
