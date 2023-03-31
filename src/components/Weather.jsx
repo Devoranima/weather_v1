@@ -78,9 +78,11 @@ const Weather = ({fetchweather, ...weatherData}) => {
     },[currentDay, weatherData.location.name])
 
     setInterval(() => {
+
         setUpdated(updated+1);
+
     }, 60000);
-    
+
     return (
         <div className='weather'>
 
